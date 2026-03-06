@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+.bmd-search:focus {
+    outline: 2px solid #00b9e4;
+    outline-offset: 0;
+}
+
 .bmd-search-clear {
     position: absolute;
     right: 0.5em;
