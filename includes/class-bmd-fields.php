@@ -5,7 +5,7 @@
  * Fields added:
  * bmd_title       — Job Title / Role
  * bmd_company     — Company / Organization
- * bmd_location    — Location (City, State/Country)
+ * bmd_location    — Location (City, State)
  * bmd_linkedin    — LinkedIn Profile URL
  */
 
