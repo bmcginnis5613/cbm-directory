@@ -1,5 +1,5 @@
 <?php
-**
+/**
  * Template: Directory grid
  *
  * Variables available (set in BMD_Shortcode::render):
