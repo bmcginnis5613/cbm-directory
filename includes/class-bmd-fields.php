@@ -3,13 +3,10 @@
  * BMD_Fields — registers and saves custom user meta fields.
  *
  * Fields added:
- *   bmd_title       — Job Title / Role
- *   bmd_company     — Company / Organization
- *   bmd_industry    — Industry / Sector
- *   bmd_linkedin    — LinkedIn Profile URL
- *
- * These are stored as standard WordPress user meta, so they are
- * compatible with any future integration (REST API, WP-CLI, etc.).
+ * bmd_title       — Job Title / Role
+ * bmd_company     — Company / Organization
+ * bmd_location    — Location (City, State/Country)
+ * bmd_linkedin    — LinkedIn Profile URL
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -41,10 +38,10 @@ class BMD_Fields {
                 'type'        => 'text',
                 'placeholder' => 'e.g. Acme Corp',
             ],
-            'bmd_industry' => [
-                'label'       => __( 'Location / Sector', 'boardroom-member-directory' ),
+            'bmd_location' => [
+                'label'       => __( 'Location', 'boardroom-member-directory' ),
                 'type'        => 'text',
-                'placeholder' => 'e.g. Financial Services',
+                'placeholder' => 'e.g. New York, NY',
             ],
             'bmd_linkedin' => [
                 'label'       => __( 'LinkedIn Profile URL', 'boardroom-member-directory' ),
