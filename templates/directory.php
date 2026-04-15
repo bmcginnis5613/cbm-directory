@@ -25,6 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         />
         <button class="bmd-search-clear" aria-label="<?php esc_attr_e( 'Clear search', 'boardroom-member-directory' ); ?>" hidden>&times;</button>
     </div>
+    
+    <?php /* Hide member count block
     <?php if ( ! empty( $members ) ) : ?>
     <p class="bmd-count">
         <?php
@@ -35,11 +37,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         ?>
     </p>
     <?php endif; ?>
+    */ ?>
+    
     <?php endif; ?>
 
-    //<?php if ( empty( $members ) ) : ?>
+    <?php if ( empty( $members ) ) : ?>
         // <p class="bmd-empty"><?php esc_html_e( 'No members found.', 'boardroom-member-directory' ); ?></p>
-    //<?php else : ?>
+    <?php else : ?>
     
     <div class="bmd-grid bmd-grid--<?php echo esc_attr( $columns ); ?>col">
         <?php foreach ( $members as $member ) :
